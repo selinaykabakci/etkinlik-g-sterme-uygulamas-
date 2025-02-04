@@ -1,0 +1,24 @@
+﻿.buton {
+    background-color:#700ef0;
+    color: #fff; 
+}
+.butona {
+    background-color: #39c24e;
+    color: #fff;
+}
+.label {
+    background-color: #f70c9c;
+    color: #fff;
+    font-size: 16px;
+}
+.div {
+    background-color:#fdbedd;
+    width: 200px;
+    height: 50px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.left-margin {
+    margin-left: 20px;
+    margin-right: 20px;
+}

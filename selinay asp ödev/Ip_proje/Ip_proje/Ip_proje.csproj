@@ -1,0 +1,397 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E67CDC77-17AD-489F-83E6-CF89CC5DEE53}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ip_proje</RootNamespace>
+    <AssemblyName>Ip_proje</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44375</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin.aspx" />
+    <Content Include="adminlist.aspx" />
+    <Content Include="AnaSayfa.aspx" />
+    <Content Include="assets\css\bootstrap.min.css" />
+    <Content Include="assets\css\flex-slider.css" />
+    <Content Include="assets\css\font-awesome.css" />
+    <Content Include="assets\css\lightbox.css" />
+    <Content Include="assets\css\owl-carousel.css" />
+    <Content Include="assets\css\templatemo-hexashop.css" />
+    <Content Include="assets\fonts\flexslider-icon.svg" />
+    <Content Include="assets\fonts\fontawesome-webfont.svg" />
+    <Content Include="assets\fonts\slick.svg" />
+    <Content Include="assets\images\37S12_wideduman.jpg" />
+    <Content Include="assets\images\8663.jpg" />
+    <Content Include="assets\images\8674.jpg" />
+    <Content Include="assets\images\about-left-image.jpg" />
+    <Content Include="assets\images\about-us-page-heading.jpg" />
+    <Content Include="assets\images\andreabocelli-NEWgrupgorsel.jpg" />
+    <Content Include="assets\images\aydinlikk-evler-son.png" />
+    <Content Include="assets\images\baner-right-image-01.jpg" />
+    <Content Include="assets\images\baner-right-image-02.jpg" />
+    <Content Include="assets\images\baner-right-image-03.jpg" />
+    <Content Include="assets\images\baner-right-image-04.jpg" />
+    <Content Include="assets\images\baturayozdemirgrupp-354196773.jpg" />
+    <Content Include="assets\images\Buray.jpg" />
+    <Content Include="assets\images\ceviz-adam-muzikali-2023101111282cd2e8852ba478e8874ed038b65ad10.jpg" />
+    <Content Include="assets\images\close.png" />
+    <Content Include="assets\images\cmxxiv.jpg" />
+    <Content Include="assets\images\explore-image-01.jpg" />
+    <Content Include="assets\images\explore-image-02.jpg" />
+    <Content Include="assets\images\image-6dc7c9b1154aca2e5f5067efaa6fdc719fa4725d.png" />
+    <Content Include="assets\images\images %281%29.jpeg" />
+    <Content Include="assets\images\images.jpeg" />
+    <Content Include="assets\images\instagram-01.jpg" />
+    <Content Include="assets\images\instagram-02.jpg" />
+    <Content Include="assets\images\instagram-03.jpg" />
+    <Content Include="assets\images\instagram-04.jpg" />
+    <Content Include="assets\images\instagram-05.jpg" />
+    <Content Include="assets\images\instagram-06.jpg" />
+    <Content Include="assets\images\kid-01.jpg" />
+    <Content Include="assets\images\kid-02.jpg" />
+    <Content Include="assets\images\kid-03.jpg" />
+    <Content Include="assets\images\korkuyu-beklerken-1.jpg" />
+    <Content Include="assets\images\left-banner-image.jpg" />
+    <Content Include="assets\images\loading.gif" />
+    <Content Include="assets\images\logo.png" />
+    <Content Include="assets\images\logoss.png" />
+    <Content Include="assets\images\logosss.png" />
+    <Content Include="assets\images\men-01.jpg" />
+    <Content Include="assets\images\men-02.jpg" />
+    <Content Include="assets\images\men-03.jpg" />
+    <Content Include="assets\images\milenaya-mektuplar-202456236565b3cf12d291c4b69ba3aac9ac50d7cdf.jpg" />
+    <Content Include="assets\images\MV5BZTQ0MGFhNmItNmM3Mi00NjFlLThmMDUtOTg1YzM0N2U1MTc1XkEyXkFqcGdeQXVyNDg4MjkzNDk%40._V1_.jpg" />
+    <Content Include="assets\images\next.png" />
+    <Content Include="assets\images\plastikasklar2021-0ANU5.png" />
+    <Content Include="assets\images\prev.png" />
+    <Content Include="assets\images\products-page-heading.jpg" />
+    <Content Include="assets\images\SelinaySu.png" />
+    <Content Include="assets\images\service-01.jpg" />
+    <Content Include="assets\images\service-02.jpg" />
+    <Content Include="assets\images\service-03.jpg" />
+    <Content Include="assets\images\single-product-01.jpg" />
+    <Content Include="assets\images\single-product-02.jpg" />
+    <Content Include="assets\images\SSlogo.png" />
+    <Content Include="assets\images\suc-ve-ceza-202392011342856f0482ca2d545c39e34864b4116b687.jpg" />
+    <Content Include="assets\images\team-member-01.jpg" />
+    <Content Include="assets\images\team-member-02.jpg" />
+    <Content Include="assets\images\team-member-03.jpg" />
+    <Content Include="assets\images\vrgbj_anadolu.png" />
+    <Content Include="assets\images\white-logo.png" />
+    <Content Include="assets\images\women-01.jpg" />
+    <Content Include="assets\images\women-02.jpg" />
+    <Content Include="assets\images\women-03.jpg" />
+    <Content Include="assets\images\Yildiz-Tilbe.png" />
+    <Content Include="assets\js\accordions.js" />
+    <Content Include="assets\js\bootstrap.min.js" />
+    <Content Include="assets\js\custom.js" />
+    <Content Include="assets\js\datepicker.js" />
+    <Content Include="assets\js\imgfix.min.js" />
+    <Content Include="assets\js\isotope.js" />
+    <Content Include="assets\js\jquery-2.1.0.min.js" />
+    <Content Include="assets\js\jquery.counterup.min.js" />
+    <Content Include="assets\js\lightbox.js" />
+    <Content Include="assets\js\owl-carousel.js" />
+    <Content Include="assets\js\popper.js" />
+    <Content Include="assets\js\quantity.js" />
+    <Content Include="assets\js\scrollreveal.min.js" />
+    <Content Include="assets\js\slick.js" />
+    <Content Include="assets\js\waypoints.min.js" />
+    <Content Include="Ayarlar.aspx" />
+    <Content Include="a\css\bootstrap.min.css" />
+    <Content Include="a\css\bootstrap\bootstrap-reboot.css" />
+    <Content Include="a\css\bootstrap\bootstrap.css" />
+    <Content Include="a\css\owl.carousel.min.css" />
+    <Content Include="a\css\style.css" />
+    <Content Include="a\fonts\icomoon\demo-files\demo.css" />
+    <Content Include="a\fonts\icomoon\demo-files\demo.js" />
+    <Content Include="a\fonts\icomoon\demo.html" />
+    <Content Include="a\fonts\icomoon\fonts\icomoon.svg" />
+    <Content Include="a\fonts\icomoon\Read Me.txt" />
+    <Content Include="a\fonts\icomoon\style.css" />
+    <Content Include="a\images\bg_1.jpg" />
+    <Content Include="a\images\kons.jpg" />
+    <Content Include="a\index.html" />
+    <Content Include="a\js\bootstrap.min.js" />
+    <Content Include="a\js\jquery-3.3.1.min.js" />
+    <Content Include="a\js\main.js" />
+    <Content Include="a\js\owl.carousel.min.js" />
+    <Content Include="a\js\popper.min.js" />
+    <Content Include="a\main.html" />
+    <Content Include="giris.aspx" />
+    <Content Include="kayıt.aspx" />
+    <Content Include="SingUp.aspx" />
+    <Content Include="Tasarim.css" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin.aspx.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin.aspx.designer.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminlist.aspx.cs">
+      <DependentUpon>adminlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminlist.aspx.designer.cs">
+      <DependentUpon>adminlist.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AnaSayfa.aspx.cs">
+      <DependentUpon>AnaSayfa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AnaSayfa.aspx.designer.cs">
+      <DependentUpon>AnaSayfa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Ayarlar.aspx.cs">
+      <DependentUpon>Ayarlar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Ayarlar.aspx.designer.cs">
+      <DependentUpon>Ayarlar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="giris.aspx.cs">
+      <DependentUpon>giris.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="giris.aspx.designer.cs">
+      <DependentUpon>giris.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="kayıt.aspx.cs">
+      <DependentUpon>kayıt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="kayıt.aspx.designer.cs">
+      <DependentUpon>kayıt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SingUp.aspx.cs">
+      <DependentUpon>SingUp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="SingUp.aspx.designer.cs">
+      <DependentUpon>SingUp.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="a\.DS_Store" />
+    <Content Include="a\css\.DS_Store" />
+    <Content Include="a\css\bootstrap.min.css.map" />
+    <Content Include="a\fonts\.DS_Store" />
+    <Content Include="a\fonts\icomoon\fonts\icomoon.eot" />
+    <Content Include="a\fonts\icomoon\fonts\icomoon.ttf" />
+    <Content Include="a\fonts\icomoon\fonts\icomoon.woff" />
+    <Content Include="a\fonts\icomoon\selection.json" />
+    <Content Include="a\images\.DS_Store" />
+    <Content Include="a\scss\.DS_Store" />
+    <Content Include="a\scss\bootstrap\bootstrap-grid.scss" />
+    <Content Include="a\scss\bootstrap\bootstrap-reboot.scss" />
+    <Content Include="a\scss\bootstrap\bootstrap.scss" />
+    <Content Include="a\scss\bootstrap\mixins\_alert.scss" />
+    <Content Include="a\scss\bootstrap\mixins\_background-variant.scss" />
+    <Content Include="a\scss\bootstrap\mixins\_badge.scss" />
+    <Content Include="a\scss\bootstrap\mixins\_border-radius.scss" />
+    <Content Include="a\scss\bootstrap\mixins\_box-shadow.scss" />
+    <Content Include="a\scss\bootstrap\mixins\_breakpoints.scss" />
+    <Content Include="a\scss\bootstrap\mixins\_buttons.scss" />
+    <Content Include="a\scss\bootstrap\mixins\_caret.scss" />
+    <Content Include="a\scss\bootstrap\mixins\_clearfix.scss" />
+    <Content Include="a\scss\bootstrap\mixins\_deprecate.scss" />
+    <Content Include="a\scss\bootstrap\mixins\_float.scss" />
+    <Content Include="a\scss\bootstrap\mixins\_forms.scss" />
+    <Content Include="a\scss\bootstrap\mixins\_gradients.scss" />
+    <Content Include="a\scss\bootstrap\mixins\_grid-framework.scss" />
+    <Content Include="a\scss\bootstrap\mixins\_grid.scss" />
+    <Content Include="a\scss\bootstrap\mixins\_hover.scss" />
+    <Content Include="a\scss\bootstrap\mixins\_image.scss" />
+    <Content Include="a\scss\bootstrap\mixins\_list-group.scss" />
+    <Content Include="a\scss\bootstrap\mixins\_lists.scss" />
+    <Content Include="a\scss\bootstrap\mixins\_nav-divider.scss" />
+    <Content Include="a\scss\bootstrap\mixins\_pagination.scss" />
+    <Content Include="a\scss\bootstrap\mixins\_reset-text.scss" />
+    <Content Include="a\scss\bootstrap\mixins\_resize.scss" />
+    <Content Include="a\scss\bootstrap\mixins\_screen-reader.scss" />
+    <Content Include="a\scss\bootstrap\mixins\_size.scss" />
+    <Content Include="a\scss\bootstrap\mixins\_table-row.scss" />
+    <Content Include="a\scss\bootstrap\mixins\_text-emphasis.scss" />
+    <Content Include="a\scss\bootstrap\mixins\_text-hide.scss" />
+    <Content Include="a\scss\bootstrap\mixins\_text-truncate.scss" />
+    <Content Include="a\scss\bootstrap\mixins\_transition.scss" />
+    <Content Include="a\scss\bootstrap\mixins\_visibility.scss" />
+    <Content Include="a\scss\bootstrap\utilities\_align.scss" />
+    <Content Include="a\scss\bootstrap\utilities\_background.scss" />
+    <Content Include="a\scss\bootstrap\utilities\_borders.scss" />
+    <Content Include="a\scss\bootstrap\utilities\_clearfix.scss" />
+    <Content Include="a\scss\bootstrap\utilities\_display.scss" />
+    <Content Include="a\scss\bootstrap\utilities\_embed.scss" />
+    <Content Include="a\scss\bootstrap\utilities\_flex.scss" />
+    <Content Include="a\scss\bootstrap\utilities\_float.scss" />
+    <Content Include="a\scss\bootstrap\utilities\_overflow.scss" />
+    <Content Include="a\scss\bootstrap\utilities\_position.scss" />
+    <Content Include="a\scss\bootstrap\utilities\_screenreaders.scss" />
+    <Content Include="a\scss\bootstrap\utilities\_shadows.scss" />
+    <Content Include="a\scss\bootstrap\utilities\_sizing.scss" />
+    <Content Include="a\scss\bootstrap\utilities\_spacing.scss" />
+    <Content Include="a\scss\bootstrap\utilities\_stretched-link.scss" />
+    <Content Include="a\scss\bootstrap\utilities\_text.scss" />
+    <Content Include="a\scss\bootstrap\utilities\_visibility.scss" />
+    <Content Include="a\scss\bootstrap\vendor\_rfs.scss" />
+    <Content Include="a\scss\bootstrap\_alert.scss" />
+    <Content Include="a\scss\bootstrap\_badge.scss" />
+    <Content Include="a\scss\bootstrap\_breadcrumb.scss" />
+    <Content Include="a\scss\bootstrap\_button-group.scss" />
+    <Content Include="a\scss\bootstrap\_buttons.scss" />
+    <Content Include="a\scss\bootstrap\_card.scss" />
+    <Content Include="a\scss\bootstrap\_carousel.scss" />
+    <Content Include="a\scss\bootstrap\_close.scss" />
+    <Content Include="a\scss\bootstrap\_code.scss" />
+    <Content Include="a\scss\bootstrap\_custom-forms.scss" />
+    <Content Include="a\scss\bootstrap\_dropdown.scss" />
+    <Content Include="a\scss\bootstrap\_forms.scss" />
+    <Content Include="a\scss\bootstrap\_functions.scss" />
+    <Content Include="a\scss\bootstrap\_grid.scss" />
+    <Content Include="a\scss\bootstrap\_images.scss" />
+    <Content Include="a\scss\bootstrap\_input-group.scss" />
+    <Content Include="a\scss\bootstrap\_jumbotron.scss" />
+    <Content Include="a\scss\bootstrap\_list-group.scss" />
+    <Content Include="a\scss\bootstrap\_media.scss" />
+    <Content Include="a\scss\bootstrap\_mixins.scss" />
+    <Content Include="a\scss\bootstrap\_modal.scss" />
+    <Content Include="a\scss\bootstrap\_nav.scss" />
+    <Content Include="a\scss\bootstrap\_navbar.scss" />
+    <Content Include="a\scss\bootstrap\_pagination.scss" />
+    <Content Include="a\scss\bootstrap\_popover.scss" />
+    <Content Include="a\scss\bootstrap\_print.scss" />
+    <Content Include="a\scss\bootstrap\_progress.scss" />
+    <Content Include="a\scss\bootstrap\_reboot.scss" />
+    <Content Include="a\scss\bootstrap\_root.scss" />
+    <Content Include="a\scss\bootstrap\_spinners.scss" />
+    <Content Include="a\scss\bootstrap\_tables.scss" />
+    <Content Include="a\scss\bootstrap\_toasts.scss" />
+    <Content Include="a\scss\bootstrap\_tooltip.scss" />
+    <Content Include="a\scss\bootstrap\_transitions.scss" />
+    <Content Include="a\scss\bootstrap\_type.scss" />
+    <Content Include="a\scss\bootstrap\_utilities.scss" />
+    <Content Include="a\scss\bootstrap\_variables.scss" />
+    <Content Include="a\scss\style.scss" />
+    <Content Include="assets\fonts\Flaticon.woff" />
+    <Content Include="assets\fonts\flexslider-icon.eot" />
+    <Content Include="assets\fonts\flexslider-icon.ttf" />
+    <Content Include="assets\fonts\flexslider-icon.woff" />
+    <Content Include="assets\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\fonts\fontawesome-webfont.woff2" />
+    <Content Include="assets\fonts\FontAwesome.otf" />
+    <Content Include="assets\fonts\slick.eot" />
+    <Content Include="assets\fonts\slick.ttf" />
+    <Content Include="assets\fonts\slick.woff" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>60511</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44375/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Bu proje bu bilgisayarda olmayan NuGet paketlerine başvuru yapıyor. Bunları indirmek için NuGet Paket Geri Yükleme'yi kullanın. Daha fazla bilgi için, bkz. http://go.microsoft.com/fwlink/?LinkID=322105. Eksik dosya: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
